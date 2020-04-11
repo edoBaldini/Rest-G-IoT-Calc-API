@@ -14,6 +14,8 @@ This part of the project provides the RESTful API with which it is possible to c
 
 Maintenance is formulated as a multi-objective-binary linear programming problem. To solve it, Gurobi Optimizer has been used and you can get it for free for a certain period of time.
 
+You can find the exposed APIs on http://127.0.0.1:8888/api/
+
 To clearly understand how the web service works, a simple frontend has been impelemented exploiting VUE.js.
 
 Further information on the frontend is available in the dedicated repository: https://github.com/edoBaldini/vue-g-iot-calc
