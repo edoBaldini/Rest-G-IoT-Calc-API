@@ -20,7 +20,7 @@ To clearly understand how the web service works, a simple frontend has been impe
 
 Further information on the frontend is available in the dedicated repository: https://github.com/edoBaldini/vue-g-iot-calc
 
-![](/readme-images/home.png)
+![](/readme-images/api.png)
 ![](/readme-images/chart.png)
 
 ## Installing	
