@@ -12,10 +12,11 @@ The aim of the web service is to estimate the energy impact (expressed in MJ) an
 
 This part of the project provides the RESTful API with which it is possible to calculate the impacts of each IoT system component (device, battery, solar panel and maintenance). In particular, maintenance requires information on the other components and returns not only its energy and waste impact, but also the analysis of the green proposal which is computed by resizing the energy harvesting system components (solar panel and battery). 
 
+Maintenance is formulated as a multi-objective-binary linear programming problem. To solve it, Gurobi Optimizer has been used and you can get it for free for a certain period of time.
+
 To clearly understand how the web service works, a simple frontend has been impelemented exploiting VUE.js.
 
 Further information on the frontend is available in the dedicated repository: https://github.com/edoBaldini/vue-g-iot-calc
-
 
 ![](/readme-images/home.png)
 ![](/readme-images/chart.png)
@@ -46,7 +47,7 @@ nano env/lib/python3.7/site-packages/flask_restplus/model.py
 nano env/lib/python3.7/site-packages/flask_restplus/api.py
 ```
 
-We assume that you have installed Gurobi version 9 but we need to make it available in the venv:
+It is assumed that you have installed Gurobi version 9 on you pc, but it is necessary to make it available in the venv:
 
 ```
 python /<Gurobi-install-directory>/setup.py build -b /tmp/gurobi install
