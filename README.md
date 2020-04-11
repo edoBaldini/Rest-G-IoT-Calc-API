@@ -34,7 +34,7 @@ python setup.py develop
 
 Change in the following three files:
 
-```import from werkzeug import cached_property```
+```from werkzeug import cached_property```
 
  with
 
