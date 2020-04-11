@@ -18,6 +18,7 @@ class CategoryCollection(Resource):
         return {}
 
     @api.expect(solar_panel_input_fields)
+    @api.response(200, 'solar panel analyzed', solar_panel)
     @api.response(400, 'input not valid', solar_panel_not_valid_fields)
     def post(self):
         data = request.json

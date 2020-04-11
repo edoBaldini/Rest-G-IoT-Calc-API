@@ -41,6 +41,7 @@ class CategoryCollection(Resource):
         return {}
 
     @api.expect(maintenance_input_fields)
+    @api.response(200, 'maintenance analyzed', maintenance)
     def post(self):
         data = request.json
         try:

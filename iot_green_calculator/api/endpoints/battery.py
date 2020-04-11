@@ -18,6 +18,7 @@ class CategoryCollection(Resource):
         return {}
 
     @api.expect(battery_input_fields)
+    @api.response(200, 'battery analyzed', battery)
     @api.response(400, 'input not valid', battery_not_valid_fields)
     def post(self):
         data = request.json

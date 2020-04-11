@@ -18,6 +18,7 @@ class CategoryCollection(Resource):
         return {}
 
     @api.expect(device_input_fields)
+    @api.response(200, 'device analyzed', device)
     def post(self):
         data = request.json
         try:

@@ -18,6 +18,7 @@ class CategoryCollection(Resource):
         return {}
 
     @api.expect(board_input_fields)
+    @api.response(200, 'board analyzed', board)
     def post(self):
         data = request.json
         try:
