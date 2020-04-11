@@ -30,7 +30,6 @@ python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 python setup.py develop
-python iot_green_calculator/app.py
 ```
 
 Change in the following three files:
