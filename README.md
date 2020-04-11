@@ -49,12 +49,14 @@ nano env/lib/python3.7/site-packages/flask_restplus/api.py
 It is assumed that you have installed Gurobi version 9 on you pc, but it is necessary to make it available in the venv:
 
 ```
-python /<Gurobi-install-directory>/setup.py build -b /tmp/gurobi install
+cd /<Gurobi-install-directory>
+python setup.py build -b /tmp/gurobi install
 ```
 
 we can run the server
 
 ```
+cd ~/<Web-service-directory>/iot_green_calculator
 python app.py
 ```
 
