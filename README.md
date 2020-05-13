@@ -1,4 +1,4 @@
-# (VUE) Green IoT impacts calculator
+# Green IoT impacts calculator
 
  <img src="/readme-images/IotLandscape.png" alt="BootstrapVue"/>
 
