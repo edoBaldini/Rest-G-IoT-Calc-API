@@ -9,5 +9,5 @@ setup(
 
     packages=find_packages(),
 
-    install_requires=['flask-restplus==0.9.2', 'Flask==1.1.1', 'Flask-Cors==3.0.7'],
+    install_requires=['flask-restplus==0.9.2', 'Flask==1.1.1', 'Flask-Cors==3.0.9'],
 )
